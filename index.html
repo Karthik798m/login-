@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+  body{
+    background-color:rgb(20, 19, 19);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+  }
+  .container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    background-color: #322C2B ;
+    height:300px;
+    width:200px;
+    border-radius:30px
+    
+  }
+  .box{
+    padding:10px;
+  }
+  input{
+    text-align: center;
+    border-radius:30px;
+    height:30px;
+    outline:none;
+    border:0;
+    background-color: #0c0a096d;
+    cursor: pointer;
+    font-weight: bold;
+    transition:0.5s;
+  }
+  .div2{
+     padding-top:40px;
+     
+  }
+  .container>p{
+    color:aliceblue;
+    font-family: roboto;
+  }
+  .line{
+    width:150px;
+    height:2px;
+    background-color: #0071e3;
+    margin-left: 25px;
+    border-radius: 1px;
+    box-shadow: 0 4px 10px #0071e3;
+  }
+  button{
+    border:0;
+    border-radius:7px;
+    padding:4px 9px 4px 9px;
+    background-color: #0071e3;
+    color:aliceblue;
+    font-size:small;
+    transition:0.2s;
+  }
+  /*animations */
+input:focus{
+  transition:0.5s;
+  box-shadow:0 0 20px 5px #0071e3;
+  background-color: #0071e3;
+  color:aliceblue;
+}
+
+input::placeholder{
+  color:aliceblue
+}
+input:active{
+  transition: 0.1s;
+  background-color: #539ae1;
+}
+button:hover{
+  transition:0.2s;
+  transform: scale(107%);
+}
+  
+ 
+  
+  
+</style>
+<body>
+  <div class="container">
+    <p>Login</p>
+    <div class="line"></div>
+    <div class="div2">
+   
+   <div class="box"> <label for="text" >
+      <input type="text" placeholder="Username"></label></div>
+      <div class="box">  <label for="text" ><input type="text" placeholder="Password" class="pswd"></label></div>
+      <div class="box"> <a href="www.google.com"><button>Sign In</button></a></div>
+    </div>
+  </div>
+</body>
+</html>
