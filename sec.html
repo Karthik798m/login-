@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smitha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-image:url("./pexels-mdx014-814499.jpg");
+        background-size:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        height:100vh;
+        font-family:roboto;
+        
+    }
+    .container{
+        backdrop-filter:blur(4px);
+        display:flex;
+        align-items: center;
+        border-radius:10px;
+        border:2px solid white;
+        text-align:center;
+        height: 250px;
+        box-shadow:0 0 20px 5px black;
+
+    }
+    .sec{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        
+    }
+    label{
+        padding:15px
+    }
+    a{
+        padding-bottom:12px;
+    }
+    h3{
+        color:white;
+    }
+    input{
+        outline:none;
+        border-radius:10px;
+        border:0;
+        height:20px;
+        text-align:center;
+        font-weight:bold;
+        transition: 0.5s;
+    }
+    button{
+        border:0;
+        border-radius:10px;
+        padding:8px;
+        font-size: x-small;
+        font-weight: bold;
+        transition:0.5s;
+        
+    }
+    input:focus{
+        background-color: rgb(97, 187, 106);
+        transition: 0.5s;
+    }
+    input::placeholder{
+        color:black;
+    }
+    input:active{
+        transition:0.2s;
+        background-color:rgb(131, 210, 131)
+    }
+    
+    button:hover{
+        transition:0.2s;
+        background-color:rgb(97, 187, 106);
+    }
+    button:hover{
+        transition:0.2s;
+        background-color:rgb(97, 187, 106);
+    }
+    #button{
+        padding-top:20px
+    }
+    .line{
+        background-color: white;
+        width:150px;
+        height:1px;
+        margin-left: 30px;
+        margin-bottom: 7px;
+    }
+    .change{
+        margin-top: 20px;
+    }
+      
+    
+</style>
+<body>
+    <div class="container">
+        <div class="sec">
+       <h3>Login</h3>
+        <div class="line"></div>
+        <label for="text"><input type="text" placeholder="username"></label>
+        <label for="text"><input type="password"placeholder="password"></label>
+       <div id="button"> <a class="login" href="./gay.html"><button>Sign in</button></a></div>
+        </div>
+    </div>
+    <a href="./index.html" class="change"><button>change login page</button></a>
+    
+</body>
+</html>
