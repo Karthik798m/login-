@@ -18,6 +18,7 @@ app.post("/submit",(req,res)=>{
     console.log(password);
 
     res.render("index.ejs");
+    alert("ayachitind");
 })
 
 app.listen(process.env.PORT||port,()=>{
